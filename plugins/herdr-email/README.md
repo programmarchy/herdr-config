@@ -33,7 +33,7 @@ herdr plugin pane open --plugin programmarchy.email-bridge --entrypoint bridge -
 
 The setup pane asks for the inbox, your exact sending address, and the API key. It writes `config.json` with mode `0600` under `herdr plugin config-dir programmarchy.email-bridge`. You can also run `.venv/bin/python bridge.py configure --inbox your-inbox@agentmail.to --sender you@example.com` from a shell; it prompts for the key unless `AGENTMAIL_API_KEY` is already set. The bridge does not start until you open its listening pane. Leave that pane running to receive mail promptly; queued events catch up after a restart. The polling webhook starts collecting mail only after the bridge is run once.
 
-For a GitHub installation, use `herdr plugin install programmarchy/herdr-plugins/herdr-email` instead of the local `link` command. Herdr runs the build steps automatically. Open the same setup pane, then the listening pane. Updates keep the configuration and local queue.
+For a GitHub installation, use `herdr plugin install programmarchy/herdr-config/plugins/herdr-email` instead of the local `link` command. Herdr runs the build steps automatically. Open the same setup pane, then the listening pane. Updates keep the configuration and local queue.
 
 To see the queue without showing your key:
 

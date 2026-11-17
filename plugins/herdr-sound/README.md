@@ -9,13 +9,13 @@ Requires macOS, Python 3, and Herdr 0.8 or newer.
 ## Install from GitHub
 
 ```sh
-herdr plugin install programmarchy/herdr-plugins/herdr-sound
+herdr plugin install programmarchy/herdr-config/plugins/herdr-sound
 herdr plugin action invoke programmarchy.ambient-sound.configure
 ```
 
 The first command installs the plugin from its public repository. The second sets up the Claude Code and Codex tool hooks and your local notification preferences. Existing agent sessions need a restart to load new hooks. Codex may require reviewing and trusting the new hook in `/hooks`.
 
-Update a GitHub installation with `herdr plugin install programmarchy/herdr-plugins/herdr-sound`. The tool hooks call the plugin by ID, so updates do not need to rewrite their command paths.
+Update a GitHub installation with `herdr plugin install programmarchy/herdr-config/plugins/herdr-sound`. The tool hooks call the plugin by ID, so updates do not need to rewrite their command paths.
 
 ## Install from a local checkout
 

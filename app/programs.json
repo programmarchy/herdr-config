@@ -1,0 +1,6 @@
+{
+  "programs": {
+    "claude": { "icon": "my-icons/claude.svg", "tint": false, "tile": "#2C2320" },
+    "codex":  { "icon": "my-icons/openai.svg", "tint": false, "tile": "#162724" }
+  }
+}
